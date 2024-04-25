@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background:linear-gradient(160deg, #2e3ca4,rgb(29, 115, 142));
+    background-repeat: no-repeat;
+    height: 713px;
+}
+#addList{
+    background-color: tomato;
+    height: 28px;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgb(242, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+div>h2{
+    height: fit-content;
+    color: #970101;
+    font-size: 27px;
+    text-shadow: 1px 1px 1px #ff6464;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+}
+.lists{
+    margin-top: 30px;
+    border: 2px solid black;
+    height: auto;
+    width: 482px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: 1px solid rgb(148, 190, 124);
+    background: linear-gradient(90deg,rgb(140, 176, 164),rgb(60, 142, 169));
+}
+.input-box{
+    border: none;
+    border-bottom: 1px dotted black;
+    background:linear-gradient(140deg, hsl(292, 55%, 52%),rgb(228, 157, 26));
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 10px;
+    height: 25px;
+    font-size: large;
+    text-shadow: 1px 1px 1px maroon;
+}
+.ok{
+    background-color: rgba(23, 228, 23, 0.656);
+    border-radius: 5px;
+    font-size: large;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+.parent-div{
+    background-color: #ad5454;
+   border-radius: 10px;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 5px;
+    display: none;
+}
+li{width: auto;
+    font-size:23px;
+    font-weight: 550;
+    padding: 5px 0px;
+   
+    list-style-position: inside;
+    margin-right: 5px;
+    position: relative;
+}
+.newBtn{
+    margin-left: 350px;
+    background-color: #d36969;
+    position: absolute;
+    right: 20px;
+    font-size: medium;
+   
+    cursor: pointer;
+    align-items: end;
+}
+h1{
+    font-size: 42px;
+    text-shadow: 1px 2px 3px red;
+    border: 1px solid red;
+    padding: 7px;
+    outline: 1px dotted yellow;
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+.ok:hover{
+    background: linear-gradient(120deg,yellow,red);
+}
+#addList:hover{
+    background: linear-gradient(145deg,rgb(173, 111, 111),rgb(55, 165, 55));
+}
+h2{
+    text-align: center;
+    padding-right: 30px;
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+[type="checkbox"]{
+    height: 20px;
+    width: 19px;
+    position: absolute;
+    left: -25px;
+  
+}
+.dlt{
+margin-left: 400px;
+background-color: red;
+border: none;
+border-radius: 5px;
+height: 20px;
+display: inline;
+margin-top: -200px;
+cursor: pointer;
+}
