@@ -45,12 +45,14 @@ star5.addEventListener("click",function(e){
     star5.src="star (1).png";
     document.querySelector(".values").textContent="Excellent😍";
 })
-
+console.log((document.querySelector(".values").textContent)
+)
 // let sub="Feedback%20about%20To%20Do%20list%20web%20app";
 // let body="To%20do%20list%20web%20app%20was%20"+star+"<br>"+decription;
 let sub="Feedback about To Do list web app";
-let body="To do list web app was "+document.querySelector(".values").textContent + decription;
+let title="To do list web app was "+(document.querySelector(".values").textContent);
+let body= decription;
 document.querySelector(".submit").addEventListener("click",()=>{
     document.querySelector("a").href=`mailto:adarshakashmm@gmail.com?subject=${sub}
-    &body=${body}`;
+    &body=To do list web app was ${(document.querySelector(".values").textContent)}.\n ${body}`;
 })
