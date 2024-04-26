@@ -178,11 +178,14 @@ function task() {
         document.querySelector(".due-time-1").value="";
         document.querySelector(".due-time-2").value="";
     })
-    
+    if(document.body.style.width >= "470px"){
+        console.log("ahcga");
+    }
     
 function enter2(a,b,c,d,e) {
     let item = document.createElement("li");
-    item.innerHTML = "<div class='li-item'><input class='tasks' type='checkbox'>" + a +"<br><span class='span'> (Due date is "+ b +" at "+c+":"+d+" "+e+" )</span></div>";
+    
+    item.innerHTML = "<div class='li-item'><input class='tasks' type='checkbox'><span>" + a +"<br><span class='span'> (Due date is "+ b +"<br> at "+c+":"+d+" "+e+" )</span></span></div>";
     let priority=document.querySelector(".priority").value;
  
     if(priority=="Low"){
