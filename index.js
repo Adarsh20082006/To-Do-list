@@ -114,27 +114,27 @@
 //  }
 // }
 
-let createTask = document.getElementById('addList');
-createTask.addEventListener('click', task);
+// let createTask = document.getElementById('addList');
+// createTask.addEventListener('click', task);
 
-let parentBox = document.querySelector(".parent-div");
-function task() {
+// let parentBox = document.querySelector(".parent-div");
+// function task() {
 
-    createTask.style.display = "none";
-    parentBox.style.display = "flex";
-}
+//     createTask.style.display = "none";
+//     parentBox.style.display = "flex";
+// }
 
-let created = document.querySelector(".ok");
-created.addEventListener('click', ok);
+// let created = document.querySelector(".ok");
+// created.addEventListener('click', ok);
 
-function ok() {
-    let inputValue = document.querySelector(".input-box").value;
-    enter2(inputValue);
+// function ok() {
+//     let inputValue = document.querySelector(".input-box").value;
+//     enter2(inputValue);
 
-    document.querySelector('.input-box').value = '';
-    parentBox.style.display = "none";
-    createTask.style.display = "flex";
-}
+//     document.querySelector('.input-box').value = '';
+//     parentBox.style.display = "none";
+//     createTask.style.display = "flex";
+// }
 
 // function enter(a) {
 //     let ol = document.querySelector("#ol");
@@ -153,9 +153,45 @@ function ok() {
 //         // let par=e.target.parentElement;
 //         // localStorage.removeItem(par.textContent.substring(0,5));
 //     );local
-function enter2(a) {
+let createTask = document.getElementById('addList');
+createTask.addEventListener('click', task);
+
+let parentBox = document.querySelector(".data-taken");
+function task() {
+
+    createTask.style.display = "none";
+    parentBox.style.display = "block";
+}
+ 
+    let done=document.querySelector(".done");
+    done.addEventListener("click",()=>{
+        let dataEntered=document.querySelector(".createTask").value;
+        let date=document.querySelector(".due-date").value;
+        let time1=document.querySelector(".due-time-1").value;
+        let time2=document.querySelector(".due-time-2").value;
+        let timeZone=document.querySelector(".time-zone").value;
+        createTask.style.display = "flex";
+        parentBox.style.display = "none";
+        enter2(dataEntered,date,time1,time2,timeZone);
+        document.querySelector(".createTask").value="";
+        document.querySelector(".due-date").value="";
+        document.querySelector(".due-time-1").value="";
+        document.querySelector(".due-time-2").value="";
+    })
+    
+    
+function enter2(a,b,c,d,e) {
     let item = document.createElement("li");
-    item.innerHTML = "<input class='tasks' type='checkbox'>" + a;
+    item.innerHTML = "<div class='li-item'><input class='tasks' type='checkbox'>" + a +"<br><span class='span'> (Due date is "+ b +" at "+c+":"+d+" "+e+" )</span></div>";
+    let priority=document.querySelector(".priority").value;
+ 
+    if(priority=="Low"){
+        item.style.color="green";
+    }
+    else if(priority=="Medium"){
+        item.style.color="orange";
+    }
+    else{item.style.color="red";}
     let ul = document.querySelector("#ol");
     ul.appendChild(item);
     let btn = document.createElement("span");
@@ -167,6 +203,7 @@ function enter2(a) {
             e.target.parentElement.remove();
             setData();
         })
+     
 
    
     if (document.querySelector(".tasks").hasAttribute("checked")) {

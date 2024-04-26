@@ -5,7 +5,8 @@ body{
     width: auto;
     background:linear-gradient(160deg, #2e3ca4,rgb(29, 115, 142));
     background-repeat: no-repeat;
-    height: 713px;
+    height: 100vh;
+    overflow: hidden;
 }
 #addList{
     background-color: tomato;
@@ -35,8 +36,8 @@ div>h2{
     padding-left: 10px;
     border-radius: 10px;
     outline: 1px solid rgb(148, 190, 124);
-    background: linear-gradient(90deg,rgb(140, 176, 164),rgb(60, 142, 169));
-}
+    background: linear-gradient(90deg,rgb(140, 176, 164),rgb(60, 142, 169));}
+/* }
 .input-box{
     border: none;
     border-bottom: 1px dotted black;
@@ -67,7 +68,7 @@ div>h2{
     padding: 10px;
     margin-top: 5px;
     display: none;
-}
+} */
 li{width: auto;
     font-size:23px;
     font-weight: 550;
@@ -83,9 +84,14 @@ li{width: auto;
     position: absolute;
     right: 20px;
     font-size: medium;
-   
+    top:18px;
     cursor: pointer;
     align-items: end;
+}
+.li-item{
+    background: linear-gradient(90deg,rgba(66, 219, 168, 0.647),rgba(70, 171, 204, 0.592));
+    border-radius: 10px;
+    padding: 0px 5px;
 }
 h1{
     font-size: 42px;
@@ -114,8 +120,8 @@ ul{
     height: 20px;
     width: 19px;
     position: absolute;
-    left: -25px;
-  
+    left: -30px;
+    top:21px;  
 }
 .dlt{
 margin-left: 400px;
@@ -126,4 +132,105 @@ height: 20px;
 display: inline;
 margin-top: -200px;
 cursor: pointer;
+}
+.entering{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: 500px;
+    text-align: center;
+    margin: 0px 10px;
+}
+.entering input{
+    text-align: center;
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 60%;
+    box-shadow: 1px 1px 5px #b0a9a9;
+}
+.entering input::placeholder{
+    text-align: center;
+    font-size: 17px;
+    
+}
+.due{
+    color: whitesmoke;
+    font-size: 18px;
+    align-items: center;
+    background-color: rgb(123, 131, 131);
+    padding: 8px;
+    margin-top: -8px;
+    border-radius: 10px;
+  
+}
+.due .due-date{
+    border:none;
+    outline: none;
+    height: 25px;
+    border-radius: 7px;
+    width:90px;
+}
+.due .due-time-1,.due-time-2{
+    width:34px;
+    border:none;
+    outline: none;
+    height: 25px;
+    border-radius: 7px;
+}
+ .colen{
+    font-size: larger;
+    font-weight: bolder;
+}
+.time-zone{
+    height: 25px;
+    border-radius: 7px;
+}
+.prior{
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+.priority{
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
+.done:hover{
+    background-color: rgba(255, 230, 0, 0.656);
+}
+.done{
+    background-color: rgb(255, 230, 0);
+    height: 40px;
+    width:80px;
+    border:none;
+    border-radius: 20px;
+    margin: 10px 10px 5px 380px;
+    box-shadow: 2px 1px 5px black;
+    cursor: pointer;
+}
+.data-taken{
+    background-color: rgba(255, 228, 196, 0.819);
+    padding: 12px;
+    border-radius: 10px;
+    display: none;
+    
+}
+.data-taken input,.data-taken select{
+    background-color: #ff6464c3;
+}
+.data-taken .adding{
+    background-color: #fe0000d5;
+   
+}
+::placeholder{
+    color:rgb(59, 80, 73);
+    font-size: 14px;
+}
+.span{
+    font-size: 16px;
+    margin-top: -5px;
 }
