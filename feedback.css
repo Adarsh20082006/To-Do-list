@@ -4,7 +4,14 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
+    background-color: antiquewhite;
     padding: 10px;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: aquamarine;
 }
 .head{
     display: block;
@@ -19,6 +26,8 @@
     margin: 10px 0px 30px;
     padding: 15px;
     font-size: large;
+    background-color: rgb(184, 146, 190);
+    border-radius: 10px;
 }
 .body .submit {
     background-color: rgb(154, 67, 236);
@@ -29,8 +38,34 @@
     box-shadow: 1px 1px 2px black;
     font-size: 18px;
     padding-top: 3px;
+    margin: auto;
 }
 .body .submit a{
     color: rgba(245, 245, 245, 0.715);
     text-decoration: none;
+}
+@media screen and (max-width:470px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width:50vh;
+        background-color: rgb(61, 174, 174);
+        height: auto;
+        padding-bottom: 20px;
+        margin:25% auto 25%;
+        border: 2px solid red;
+        outline: 1px solid rgb(207, 207, 124);
+        border-radius: 5px;
+    }
+    .body .describe{
+        width: 340px;
+        height: 130px;
+        background-color: rgb(155, 116, 161);
+    }
+    h2{
+        text-align: center;
+    }
 }
