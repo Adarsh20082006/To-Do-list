@@ -207,4 +207,4 @@ function setData() {
 function getData() {
 
     document.querySelector("ul").innerHTML = localStorage.getItem("data");
-}
+}document.getElementById("id")
