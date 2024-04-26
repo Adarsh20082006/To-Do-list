@@ -1,16 +1,16 @@
-body{
+body {
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background:linear-gradient(160deg, #2e3ca4,rgb(29, 115, 142));
+    background: linear-gradient(160deg, #2e3ca4, rgb(29, 115, 142));
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
 }
 
-#addList{
+#addList {
     background-color: tomato;
     height: 28px;
     font-size: large;
@@ -19,7 +19,8 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-div>h2{
+
+div>h2 {
     height: fit-content;
     color: #970101;
     font-size: 27px;
@@ -30,7 +31,8 @@ div>h2{
     margin: 0px;
     margin-top: 10px;
 }
-.lists{
+
+.lists {
     margin-top: 30px;
     border: 2px solid black;
     height: auto;
@@ -38,7 +40,9 @@ div>h2{
     padding-left: 10px;
     border-radius: 10px;
     outline: 1px solid rgb(148, 190, 124);
-    background: linear-gradient(90deg,rgb(140, 176, 164),rgb(60, 142, 169));}
+    background: linear-gradient(90deg, rgb(140, 176, 164), rgb(60, 142, 169));
+}
+
 /* }
 .input-box{
     border: none;
@@ -71,31 +75,35 @@ div>h2{
     margin-top: 5px;
     display: none;
 } */
-li{width: auto;
-    font-size:23px;
+li {
+    width: auto;
+    font-size: 23px;
     font-weight: 550;
     padding: 5px 0px;
-   
+
     list-style-position: inside;
     margin-right: 5px;
     position: relative;
 }
-.newBtn{
+
+.newBtn {
     margin-left: 350px;
     background-color: #d36969;
     position: absolute;
     right: 20px;
     font-size: medium;
-    top:18px;
+    top: 18px;
     cursor: pointer;
     align-items: end;
 }
-.li-item{
-    background: linear-gradient(90deg,rgba(66, 219, 168, 0.647),rgba(70, 171, 204, 0.592));
+
+.li-item {
+    background: linear-gradient(90deg, rgba(66, 219, 168, 0.647), rgba(70, 171, 204, 0.592));
     border-radius: 10px;
     padding: 0px 5px;
 }
-h1{
+
+h1 {
     font-size: 42px;
     text-shadow: 1px 2px 3px red;
     border: 1px solid red;
@@ -104,38 +112,45 @@ h1{
     outline-offset: 2px;
     border-radius: 5px;
 }
-.ok:hover{
-    background: linear-gradient(120deg,yellow,red);
+
+.ok:hover {
+    background: linear-gradient(120deg, yellow, red);
 }
-#addList:hover{
-    background: linear-gradient(145deg,rgb(173, 111, 111),rgb(55, 165, 55));
+
+#addList:hover {
+    background: linear-gradient(145deg, rgb(173, 111, 111), rgb(55, 165, 55));
 }
-h2{
+
+h2 {
     text-align: center;
     padding-right: 30px;
     position: relative;
 }
-ul{
+
+ul {
     list-style: none;
 }
-[type="checkbox"]{
+
+[type="checkbox"] {
     height: 20px;
     width: 19px;
     position: absolute;
     left: -30px;
-    top:21px;  
+    top: 21px;
 }
-.dlt{
-margin-left: 400px;
-background-color: red;
-border: none;
-border-radius: 5px;
-height: 20px;
-display: inline;
-margin-top: -200px;
-cursor: pointer;
+
+.dlt {
+    margin-left: 400px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    display: inline;
+    margin-top: -200px;
+    cursor: pointer;
 }
-.entering{
+
+.entering {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -143,7 +158,8 @@ cursor: pointer;
     text-align: center;
     margin: 0px 10px;
 }
-.entering input{
+
+.entering input {
     text-align: center;
     flex: 1;
     height: 40px;
@@ -154,12 +170,14 @@ cursor: pointer;
     width: 60%;
     box-shadow: 1px 1px 5px #b0a9a9;
 }
-.entering input::placeholder{
+
+.entering input::placeholder {
     text-align: center;
     font-size: 17px;
-    
+
 }
-.due{
+
+.due {
     color: whitesmoke;
     font-size: 18px;
     align-items: center;
@@ -167,76 +185,104 @@ cursor: pointer;
     padding: 8px;
     margin-top: -8px;
     border-radius: 10px;
-  
+
 }
-.due .due-date{
-    border:none;
+
+.due .due-date {
+    border: none;
     outline: none;
     height: 25px;
     border-radius: 7px;
-    width:90px;
+    width: 90px;
 }
-.due .due-time-1,.due-time-2{
-    width:34px;
-    border:none;
+
+.due .due-time-1,
+.due-time-2 {
+    width: 34px;
+    border: none;
     outline: none;
     height: 25px;
     border-radius: 7px;
 }
- .colen{
+
+.colen {
     font-size: larger;
     font-weight: bolder;
 }
-.time-zone{
+
+.time-zone {
     height: 25px;
     border-radius: 7px;
 }
-.prior{
+
+.prior {
     margin-top: 15px;
     text-align: center;
     width: 100%;
 }
-.priority{
+
+.priority {
     border: none;
     border-radius: 5px;
     height: 25px;
 }
-.done:hover{
+
+.done:hover {
     background-color: rgba(255, 230, 0, 0.656);
 }
-.done{
+
+.done {
     background-color: rgb(255, 230, 0);
     height: 40px;
-    width:80px;
-    border:none;
+    width: 80px;
+    border: none;
     border-radius: 20px;
     margin: 10px 10px 5px 380px;
     box-shadow: 2px 1px 5px black;
     cursor: pointer;
 }
-.data-taken{
+
+.data-taken {
     background-color: rgba(255, 228, 196, 0.819);
     padding: 12px;
     border-radius: 10px;
     display: none;
-    
+
 }
-.data-taken input,.data-taken select{
+
+.data-taken input,
+.data-taken select {
     background-color: #ff6464c3;
 }
-.data-taken .adding{
+
+.data-taken .adding {
     background-color: #fe0000d5;
-   
+
 }
-::placeholder{
-    color:rgb(59, 80, 73);
+
+::placeholder {
+    color: rgb(59, 80, 73);
     font-size: 14px;
 }
-.span{
+
+.span {
     font-size: 16px;
     margin-top: -5px;
-}@media screen and (max-width:470px) {
-    body{
+}
+.feedback,.help{
+height: 25px;
+margin-left: 5px;
+position: relative;
+left: 180px;
+top:10px;
+border:none;
+border-radius: 4px;
+background-color: #b0a9a9;
+cursor: pointer;
+}
+
+@media screen and (max-width:470px) {
+    body {
         margin-left: 20px;
         display: flex;
         flex-direction: column;
@@ -244,14 +290,17 @@ cursor: pointer;
         width: 100%;
         background-repeat: no-repeat;
         height: 100vh;
-      
+
     }
-    html{display: flex;
+
+    html {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        background:linear-gradient( #2e3ca4,rgb(29, 115, 142));   
+        background: linear-gradient(#2e3ca4, rgb(29, 115, 142));
     }
-    .lists{
+
+    .lists {
         margin-top: 30px;
         border: 2px solid black;
         height: auto;
@@ -259,45 +308,57 @@ cursor: pointer;
         padding-left: 10px;
         border-radius: 10px;
         outline: 1px solid rgb(148, 190, 124);
-        background: linear-gradient(90deg,rgb(140, 176, 164),rgb(60, 142, 169));}
-        .dlt{
-            margin-left: 220px;
-            margin-top: -190px; 
-           
-            }
-            .data-taken{
-                width: 300px;
-            }
-            .done{
-                margin: 10px 10px 5px 210px;                
-            }
-            li{width: auto;
-                font-size:20px;
-                font-weight: 400;
-                padding: 5px 0px;
-               display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-right: 5px;               
-            }
-            .newBtn{
-                margin-right: 5px;
-                align-items: flex-end;
-                height: 100%;
-                max-height: 25px;
-            }
-            .li-item{
-                margin-top: 5px;
-               border-bottom: 1px solid black;
-              }
-              [type="checkbox"]{
-                height: 15px;}
-                .li-item{
-                    border-bottom: 1px solid black;
-                     display: flex;
-                     align-items: center;
-                     flex-wrap: wrap;
-                     flex-grow: 1;
-                     padding: 0px 5px;
-                 }
+        background: linear-gradient(90deg, rgb(140, 176, 164), rgb(60, 142, 169));
+    }
+
+    .dlt {
+        margin-left: 220px;
+        margin-top: -190px;
+
+    }
+
+    .data-taken {
+        width: 300px;
+    }
+
+    .done {
+        margin: 10px 10px 5px 210px;
+    }
+
+    li {
+        width: auto;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+    .newBtn {
+        margin-right: 5px;
+        margin-top: 13px;
+        height: 25px;
+        justify-content: space-around;
+    }
+
+    .li-item {
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    [type="checkbox"] {
+        height: 15px;
+    }
+
+    .li-item {
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        padding: 0px 5px;
+    }
+
 }

@@ -162,39 +162,39 @@ function task() {
     createTask.style.display = "none";
     parentBox.style.display = "block";
 }
- 
-    let done=document.querySelector(".done");
-    done.addEventListener("click",()=>{
-        let dataEntered=document.querySelector(".createTask").value;
-        let date=document.querySelector(".due-date").value;
-        let time1=document.querySelector(".due-time-1").value;
-        let time2=document.querySelector(".due-time-2").value;
-        let timeZone=document.querySelector(".time-zone").value;
-        createTask.style.display = "flex";
-        parentBox.style.display = "none";
-        enter2(dataEntered,date,time1,time2,timeZone);
-        document.querySelector(".createTask").value="";
-        document.querySelector(".due-date").value="";
-        document.querySelector(".due-time-1").value="";
-        document.querySelector(".due-time-2").value="";
-    })
-    if(document.body.style.width >= "470px"){
-        console.log("ahcga");
-    }
-    
-function enter2(a,b,c,d,e) {
+
+let done = document.querySelector(".done");
+done.addEventListener("click", () => {
+    let dataEntered = document.querySelector(".createTask").value;
+    let date = document.querySelector(".due-date").value;
+    let time1 = document.querySelector(".due-time-1").value;
+    let time2 = document.querySelector(".due-time-2").value;
+    let timeZone = document.querySelector(".time-zone").value;
+    createTask.style.display = "flex";
+    parentBox.style.display = "none";
+    enter2(dataEntered, date, time1, time2, timeZone);
+    document.querySelector(".createTask").value = "";
+    document.querySelector(".due-date").value = "";
+    document.querySelector(".due-time-1").value = "";
+    document.querySelector(".due-time-2").value = "";
+})
+if (document.body.style.width >= "470px") {
+    console.log("ahcga");
+}
+
+function enter2(a, b, c, d, e) {
     let item = document.createElement("li");
-    
-    item.innerHTML = "<div class='li-item'><input class='tasks' type='checkbox'><span>" + a +"<br><span class='span'> (Due date is "+ b +"<br> at "+c+":"+d+" "+e+" )</span></span></div>";
-    let priority=document.querySelector(".priority").value;
- 
-    if(priority=="Low"){
-        item.style.color="green";
+
+    item.innerHTML = "<div class='li-item'><input class='tasks' type='checkbox'><span>" + a + "<br><span class='span'> (Due date is " + b + "<br> at " + c + ":" + d + " " + e + " )</span></span></div>";
+    let priority = document.querySelector(".priority").value;
+
+    if (priority == "Low") {
+        item.style.color = "green";
     }
-    else if(priority=="Medium"){
-        item.style.color="orange";
+    else if (priority == "Medium") {
+        item.style.color = "orange";
     }
-    else{item.style.color="red";}
+    else { item.style.color = "red"; }
     let ul = document.querySelector("#ol");
     ul.appendChild(item);
     let btn = document.createElement("span");
@@ -206,16 +206,17 @@ function enter2(a,b,c,d,e) {
             e.target.parentElement.remove();
             setData();
         })
-     
 
-   
-    if (document.querySelector(".tasks").hasAttribute("checked")) {
-        document.querySelector(".tasks").parentElement.remove();
-        localStorage.removeItem("data");
-        document.querySelector("ul").innerHTML= document.querySelector("ul").innerHTML;
-        setData();
 
-    }
+    document.querySelector(".tasks").addEventListener("click", function () {
+        if (document.querySelector(".tasks").hasAttribute("checked")) {
+            document.querySelector(".tasks").parentElement.parentElement.remove();
+            localStorage.removeItem("data");
+            document.querySelector("ul").innerHTML = document.querySelector("ul").innerHTML;
+            setData();
+        }
+
+    })
     document.querySelector(".tasks").addEventListener("click", (e) => {
         document.querySelector(".tasks").setAttribute("checked", "checked");
         setData();
@@ -247,4 +248,4 @@ function setData() {
 function getData() {
 
     document.querySelector("ul").innerHTML = localStorage.getItem("data");
-}document.getElementById("id")
+} document.getElementById("id")
