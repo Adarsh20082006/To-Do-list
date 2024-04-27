@@ -33,11 +33,11 @@ div>h2 {
 }
 
 .lists {
-    margin-top: 30px;
+    margin: 30px 10px ;
     border: 2px solid black;
     height: auto;
-    width: 482px;
-    padding-left: 10px;
+    width: 450px;
+    
     border-radius: 10px;
     outline: 1px solid rgb(148, 190, 124);
     background: linear-gradient(90deg, rgb(140, 176, 164), rgb(60, 142, 169));
@@ -140,7 +140,7 @@ ul {
 }
 
 .dlt {
-    margin-left: 400px;
+    margin-left: 370px;
     background-color: red;
     border: none;
     border-radius: 5px;
@@ -152,22 +152,27 @@ ul {
 
 .entering {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     width: auto;
     max-width: 500px;
     text-align: center;
     margin: 0px 10px;
+    
+}
+.entering h3{
+    font-size: 20px;
 }
 
 .entering input {
+    margin-top: -25px;
     text-align: center;
-    flex: 1;
     height: 40px;
-    border: none;
+    font-size: 18px;
     outline: none;
     border-radius: 20px;
     padding-left: 10px;
-    width: 60%;
+    width: 100%;
     box-shadow: 1px 1px 5px #b0a9a9;
 }
 
@@ -185,7 +190,7 @@ ul {
     padding: 8px;
     margin-top: -8px;
     border-radius: 10px;
-
+    
 }
 
 .due .due-date {
@@ -194,6 +199,12 @@ ul {
     height: 25px;
     border-radius: 7px;
     width: 90px;
+}
+.due-time-1-span{
+position: relative;
+top:35px;
+right: 120px;
+font-size: larger;
 }
 
 .due .due-time-1,
@@ -243,16 +254,16 @@ ul {
 }
 
 .data-taken {
-    background-color: rgba(255, 228, 196, 0.819);
+    background-color: rgba(97, 194, 215, 0.819);
     padding: 12px;
     border-radius: 10px;
     display: none;
-
+    
 }
 
 .data-taken input,
 .data-taken select {
-    background-color: #ff6464c3;
+    background-color: #dbdbd9;
 }
 
 .data-taken .adding {
@@ -269,11 +280,11 @@ ul {
     font-size: 16px;
     margin-top: -5px;
 }
-.feedback,.help{
+.feedback{
 height: 25px;
 margin-left: 5px;
 position: relative;
-left: 180px;
+left: 190px;
 top:10px;
 border:none;
 border-radius: 4px;
@@ -290,7 +301,7 @@ cursor: pointer;
         width: 100%;
         background-repeat: no-repeat;
         height: 100vh;
-
+        text-align: center;
     }
 
     html {
@@ -360,5 +371,114 @@ cursor: pointer;
         flex-grow: 1;
         padding: 0px 5px;
     }
+    .feedback{
+    left: 112px;
+    background-color: #d36969;
+    }
+}
+@media screen and (max-width:600px){
+    body {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        text-align: center;
+    }
 
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(#2e3ca4, rgb(29, 115, 142));
+    }
+
+    .lists {
+        margin-top: 30px;
+        border: 2px solid black;
+        height: auto;
+        width: 400px;
+        padding-left: 10px;
+        border-radius: 10px;
+        outline: 1px solid rgb(148, 190, 124);
+        background: linear-gradient(90deg, rgb(140, 176, 164), rgb(60, 142, 169));
+    }
+
+    .dlt {
+        margin-left: 290px;
+        margin-top: -190px;
+
+    }
+
+    .data-taken {
+        width: 400px;
+    }
+
+    .done {
+        margin: 10px 10px 5px 310px;
+    }
+
+    li {
+        width: auto;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+    .newBtn {
+        margin-right: 5px;
+        margin-top: 13px;
+        height: 25px;
+        justify-content: space-around;
+    }
+
+    .li-item {
+        margin-top: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    [type="checkbox"] {
+        height: 15px;
+    }
+
+    .li-item {
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        padding: 0px 5px;
+    }
+    .feedback{
+    left: 170px;
+    background-color: #d36969;
+    }
+    .entering {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+        max-width: 500px;
+        text-align: center;
+        margin: 0px 10px;
+        
+    }
+    
+    .entering input {
+        margin-top: -25px;
+        text-align: center;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding-left: 10px;
+        width: 100%;
+        box-shadow: 1px 1px 5px #b0a9a9;
+    }
 }
