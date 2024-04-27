@@ -173,15 +173,20 @@ done.addEventListener("click", () => {
     createTask.style.display = "flex";
     parentBox.style.display = "none";
     enter2(dataEntered, date, time1, time2, timeZone);
+
+
+if((document.querySelector(".due-time-1").value > 12)||(document.querySelector(".due-time-2").value > 59)){
+    document.querySelector(".due-time-1-span").textContent="Invalid";
+    document.querySelector(".due-time-1-span").style.color="red";}
+else if(document.querySelector(".due-time-1").value <= 12){
+    enter2(dataEntered, date, time1, time2, timeZone);
+    document.querySelector(".due-time-1-span").textContent="";
     document.querySelector(".createTask").value = "";
     document.querySelector(".due-date").value = "";
     document.querySelector(".due-time-1").value = "";
     document.querySelector(".due-time-2").value = "";
-})
-if (document.body.style.width >= "470px") {
-    console.log("ahcga");
 }
-
+})
 function enter2(a, b, c, d, e) {
     let item = document.createElement("li");
 

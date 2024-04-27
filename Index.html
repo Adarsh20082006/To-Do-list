@@ -8,7 +8,7 @@
     <link rel="html" href="feedback.html" type="text/html">
 </head>
 <body>
-  <aside><a href="./feedback.html"><button class="feedback">Feedback</button></a><button class="help">Help</button></aside>
+  <aside><a href="./feedback.html"><button class="feedback">Feedback</button></a></aside>
   <h1>To-do lists</h1>
   <button id="addList">Add a task</button>
  <!-- <div class="parent-div">
@@ -16,14 +16,15 @@
     <button class="ok" type='Submit' fdprocessedid="ncwqco">Create</button></div> -->
     <section class="data-taken">
     <div class="entering">
+      <h3>Fill the following input boxes to create a new task...</h3><br>
     <input type="text" class="createTask" placeholder="Enter task here">
     
     </div><br>
     <div class="due">
       <label for="date">Enter due date and time of the task:</label>
       <input type="text" class="due-date" name="date"  placeholder="DD/MM/YYYY"><span class="comma">,</span>
-      <input type="text" class="due-time-1" pattern="[1-12]{2}" placeholder="Hr"><span class="colen">:</span>
-      <input type="text" class="due-time-2" pattern="[0-59]{2}" placeholder="Min">
+      <input type="text" class="due-time-1" pattern="[1-9]{2}" placeholder="Hr"><span class="colen">:</span>
+      <input type="text" class="due-time-2" pattern="[0-9]{2}" placeholder="Min">
       <select class="time-zone"><option value="am">a.m</option><option value="pm">p.m</option></select>
       <div class="prior">
       <label for="priority">Priority:</label>
@@ -31,8 +32,9 @@
         <option value="Low">Low</option>
         <option value="Medium" selected>Medium</option>
         <option value="High">High</option>
-      </select></div>
+      </select><br>
     </div>
+    </div>  <span class="due-time-1-span">whbhdddef</span>
     <button class="done">Done</button>
     </section>
   <div class="lists" id="lists">
