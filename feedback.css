@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 .body .describe{
-    margin: 10px 0px 30px;
+    margin: 10px 10px 30px;
     padding: 15px;
     font-size: large;
     background-color: rgb(184, 146, 190);
@@ -61,7 +61,8 @@ body{
         border-radius: 5px;
     }
     .body .describe{
-        width: 340px;
+        margin: auto;
+        width: 320px;
         height: 130px;
         background-color: rgb(155, 116, 161);
     }
