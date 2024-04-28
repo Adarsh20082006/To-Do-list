@@ -44,13 +44,20 @@ body{
     color: rgba(245, 245, 245, 0.715);
     text-decoration: none;
 }
-@media screen and (max-width:470px) {
+.back button{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(206, 116, 116);
+}
+
+/* @media screen and (max-width:470px) { */
     body{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: auto;
+        
         width:50vh;
         background-color: rgb(61, 174, 174);
         height: auto;
@@ -61,12 +68,19 @@ body{
         border-radius: 5px;
     }
     .body .describe{
-        margin: auto;
+        margin: 10px 20px;
         width: 300px;
         height: 130px;
         background-color: rgb(155, 116, 161);
     }
+    
     h2{
         text-align: center;
     }
-}
+    .back{
+        position: fixed;
+        top:30px;
+        left:60px;
+        
+    }
+

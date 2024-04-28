@@ -292,12 +292,13 @@ background-color: #b0a9a9;
 cursor: pointer;
 }
 
-@media screen and (max-width:470px) {
+@media screen and (max-width:450px) {
     body {
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         width: 100%;
         background-repeat: no-repeat;
         height: 100vh;
@@ -313,6 +314,7 @@ cursor: pointer;
     }
 
     .lists {
+        margin: auto;
         margin-top: 30px;
         border: 2px solid black;
         height: auto;
@@ -373,11 +375,11 @@ cursor: pointer;
         padding: 0px 5px;
     }
     .feedback{
-    left: 112px;
+    left: 100px;
     background-color: #d36969;
-    }
-}
-@media screen and (max-width:600px){
+    }}
+
+@media screen and (max-width:600px) and (min-width:450px){
     body {
        
         display: flex;
@@ -482,4 +484,4 @@ cursor: pointer;
         width: 100%;
         box-shadow: 1px 1px 5px #b0a9a9;
     }
-}
+} 
