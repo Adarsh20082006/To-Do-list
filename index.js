@@ -172,7 +172,7 @@ done.addEventListener("click", () => {
     let timeZone = document.querySelector(".time-zone").value;
     createTask.style.display = "flex";
     parentBox.style.display = "none";
-    enter2(dataEntered, date, time1, time2, timeZone);
+    // enter2(dataEntered, date, time1, time2, timeZone);
 
 
 if((document.querySelector(".due-time-1").value > 12)||(document.querySelector(".due-time-2").value > 59)){
