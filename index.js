@@ -158,7 +158,7 @@ createTask.addEventListener('click', task);
 
 let parentBox = document.querySelector(".data-taken");
 function task() {
-
+    
     createTask.style.display = "none";
     parentBox.style.display = "block";
 }
@@ -170,23 +170,35 @@ done.addEventListener("click", () => {
     let time1 = document.querySelector(".due-time-1").value;
     let time2 = document.querySelector(".due-time-2").value;
     let timeZone = document.querySelector(".time-zone").value;
+    let valid;
+    
+if(((document.querySelector(".due-time-1").value > 12 || document.querySelector(".due-time-1").value < 1)||(document.querySelector(".due-time-2").value > 59 || document.querySelector(".due-time-2").value < 0))  ||    document.querySelector(".createTask").value =="")  {
+    valid=false;
+    document.querySelector(".due-time-1-span").textContent="Invalid!";
     createTask.style.display = "flex";
-    parentBox.style.display = "none";
-    // enter2(dataEntered, date, time1, time2, timeZone);
-
-
-if((document.querySelector(".due-time-1").value > 12)||(document.querySelector(".due-time-2").value > 59)){
-    document.querySelector(".due-time-1-span").textContent="Invalid";
     document.querySelector(".due-time-1-span").style.color="red";}
 else if(document.querySelector(".due-time-1").value <= 12){
     enter2(dataEntered, date, time1, time2, timeZone);
+    valid=true;
     document.querySelector(".due-time-1-span").textContent="";
     document.querySelector(".createTask").value = "";
     document.querySelector(".due-date").value = "";
     document.querySelector(".due-time-1").value = "";
     document.querySelector(".due-time-2").value = "";
 }
+    if(valid){
+    createTask.style.display = "flex";
+    parentBox.style.display = "none";}
+    // enter2(dataEntered, date, time1, time2, timeZone);
+    else{
+        createTask.style.display = "none";
+        parentBox.style.display = "block";
+    }
+
 })
+
+let today=new Date().getFullYear()+"-0"+((new Date().getMonth())+1)+"-"+new Date().getDate();
+document.querySelector(".due-date").setAttribute("min",today);
 function enter2(a, b, c, d, e) {
     let item = document.createElement("li");
 

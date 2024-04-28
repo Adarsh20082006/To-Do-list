@@ -23,7 +23,7 @@
     </div><br>
     <div class="due">
       <label for="date">Enter due date and time of the task:</label>
-      <input type="text" class="due-date" name="date"  placeholder="DD/MM/YYYY"><span class="comma">,</span>
+      <input type="text" class="due-date" onfocus="this.type='date'" min="" name="date"  placeholder="DD/MM/YYYY"><span class="comma">,</span>
       <input type="text" class="due-time-1" pattern="[1-9]{2}" placeholder="Hr"><span class="colen">:</span>
       <input type="text" class="due-time-2" pattern="[0-9]{2}" placeholder="Min">
       <select class="time-zone"><option value="am">a.m</option><option value="pm">p.m</option></select>
@@ -35,7 +35,7 @@
         <option value="High">High</option>
       </select><br>
     </div>
-    </div>  <span class="due-time-1-span">whbhdddef</span>
+    </div>  <span class="due-time-1-span"></span>
     <button class="done">Done</button>
     </section>
   <div class="lists" id="lists">
