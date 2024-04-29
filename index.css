@@ -92,7 +92,7 @@ li {
     position: absolute;
     right: 20px;
     font-size: medium;
-    top: 18px;
+    top: 35px;
     cursor: pointer;
     align-items: end;
 }
@@ -101,6 +101,8 @@ li {
     background: linear-gradient(90deg, rgba(66, 219, 168, 0.647), rgba(70, 171, 204, 0.592));
     border-radius: 10px;
     padding: 0px 5px;
+   display: flex;
+   align-items: center;
 }
 
 h1 {
@@ -123,20 +125,19 @@ h1 {
 
 h2 {
     text-align: center;
-    padding-right: 30px;
+   
     position: relative;
 }
 
 ul {
     list-style: none;
+    padding: 0px 10px;
 }
 
 [type="checkbox"] {
-    height: 20px;
+     height: 20px;
     width: 19px;
-    position: absolute;
-    left: -30px;
-    top: 21px;
+    
 }
 
 .dlt {
@@ -190,7 +191,7 @@ ul {
     padding: 8px;
     margin-top: -8px;
     border-radius: 10px;
-    
+    text-align: center;
 }
 
 .due .due-date {
@@ -202,8 +203,8 @@ ul {
 }
 .due-time-1-span{
 position: relative;
-top:35px;
-right: 120px;
+top:42px;
+left: 150px;
 font-size: larger;
 }
 
@@ -248,7 +249,7 @@ font-size: larger;
     width: 80px;
     border: none;
     border-radius: 20px;
-    margin: 10px 10px 5px 380px;
+    margin: 10px 10px 5px 300px;
     box-shadow: 2px 1px 5px black;
     cursor: pointer;
 }
@@ -258,7 +259,7 @@ font-size: larger;
     padding: 12px;
     border-radius: 10px;
     display: none;
-    
+    width:400px;
 }
 
 .data-taken input,
@@ -319,7 +320,7 @@ cursor: pointer;
         border: 2px solid black;
         height: auto;
         width: 300px;
-        padding-left: 10px;
+        
         border-radius: 10px;
         outline: 1px solid rgb(148, 190, 124);
         background: linear-gradient(90deg, rgb(140, 176, 164), rgb(60, 142, 169));
@@ -332,11 +333,11 @@ cursor: pointer;
     }
 
     .data-taken {
-        width: 300px;
+        width: 270px;
     }
 
     .done {
-        margin: 10px 10px 5px 210px;
+        margin: 10px 60px 5px 190px;
     }
 
     li {
@@ -358,13 +359,35 @@ cursor: pointer;
     }
 
     .li-item {
+   
         margin-top: 5px;
         border-bottom: 1px solid black;
     }
 
     [type="checkbox"] {
         height: 15px;
+        width: 19px;
     }
+    .due-time-1-span{
+        position: relative;
+        top:42px;
+        left: 0px;
+        font-size: larger;
+        }
+h2 {
+    text-align: center;
+   
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0px 10px;
+}
+.due{
+    width:250px;
+}
+
 
     .li-item {
         border-bottom: 1px solid black;
@@ -372,14 +395,14 @@ cursor: pointer;
         align-items: center;
         flex-wrap: wrap;
         flex-grow: 1;
-        padding: 0px 5px;
+       padding:10px 5px;
     }
     .feedback{
-    left: 100px;
+    left: 115px;
     background-color: #d36969;
-    }}
-
-@media screen and (max-width:600px) and (min-width:450px){
+    }
+}
+/* @media screen and (max-width:600px) and (min-width:450px){
     body {
        
         display: flex;
@@ -484,4 +507,4 @@ cursor: pointer;
         width: 100%;
         box-shadow: 1px 1px 5px #b0a9a9;
     }
-} 
+}  */

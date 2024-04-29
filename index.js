@@ -172,7 +172,7 @@ done.addEventListener("click", () => {
     let timeZone = document.querySelector(".time-zone").value;
     let valid;
     
-if(((document.querySelector(".due-time-1").value > 12 || document.querySelector(".due-time-1").value < 1)||(document.querySelector(".due-time-2").value > 59 || document.querySelector(".due-time-2").value < 0))  ||    document.querySelector(".createTask").value =="")  {
+if(((document.querySelector(".due-time-1").value > 12 || document.querySelector(".due-time-1").value < 1)||(document.querySelector(".due-time-2").value > 59 || document.querySelector(".due-time-2").value < 0)) || document.querySelector(".createTask").value =="")  {
     valid=false;
     document.querySelector(".due-time-1-span").textContent="Invalid!";
     createTask.style.display = "flex";
